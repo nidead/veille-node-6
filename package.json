@@ -1,0 +1,31 @@
+{
+  "name": "veille-node-5",
+  "version": "1.0.0",
+  "description": "Exercice #5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidead/veille-node-5.git"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "mongodb"
+  ],
+  "author": "Simon Roussin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nidead/veille-node-5/issues"
+  },
+  "homepage": "https://github.com/nidead/veille-node-5#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "save": "^2.3.2"
+  }
+}

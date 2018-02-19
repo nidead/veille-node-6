@@ -1,0 +1,33 @@
+<%
+let ordreObjet={
+	"_id":"asc",
+	"nom":"asc",
+	"prenom":"asc",
+	"telephone":"asc"
+}
+
+if(typeof cle !== "undefined" && cle){
+	ordreObjet[cle]=ordre;
+}
+
+%>
+<table class="tableau">
+ <tr>
+ <th><a href='/trier/id/<%= ordreObjet._id %>'>ID</a></th>
+ <th><a href='/trier/nom/<%= ordreObjet.nom %>'>Nom</a></th> 
+ <th><a href='/trier/prenom/<%= ordreObjet.prenom %>'>Prenom</a></th>
+ <th><a href='/trier/telephone/<%= ordreObjet.telephone%>'>Telephone</a></th>
+
+ <th>Ajouter</th> 
+ </tr>
+ <% adresses.forEach(elm => {%>
+ <tr>
+ <td><%= elm._id %></td>
+ <td contenteditable='true'><%= elm.nom %></td>
+ <td contenteditable='true'><%= elm.prenom %></td>
+ <td contenteditable='true'><%= elm.telephone %></td>
+ <td><a href="/delete/<%= elm._id %>">Delete</a></td>
+ <td><a class='sauver' href="#">Sauver</a></td>
+ </tr>
+ <% }) %>
+ </table>
