@@ -9,11 +9,26 @@ table{
 	font-family: arial, sans-serif;
     border-collapse: collapse;
     margin: 0 auto;
-
+    margin-top: 2%;
+    margin-bottom: 2%;
     td, tr {
 	border: 1px solid #dddddd;
     text-align: left;
     padding: 15px;
+
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+
 	}
 	td{
 		font-size: 30px;
@@ -24,6 +39,12 @@ table{
 	th {
 		background-color: #270c27;
 		color: white;
+
+		a{
+			color: white;
+			text-decoration: none;
+
+		}
 	}
 tr:nth-child(even) {
     background-color: #dddddd;
@@ -68,7 +89,7 @@ form{
 }
 header{
 	padding: 1%;
-	background-color:#993399;
+	
 	section{
 		text-align: center;
 	}
@@ -77,4 +98,19 @@ header{
 .mon_formulaire{
 	display:none;
 }
+input{
+	border-radius: 10000em;
+    border: solid violet;
+    text-align: center;
+}
 
+nav {
+	display: flex;
+	    text-align: center;
+	a{
+		text-decoration: none;
+	    color: black;
+	    font-family: Arial;
+	    padding: 1%;
+	}
+}
